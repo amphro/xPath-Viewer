@@ -1,0 +1,24 @@
+{
+  "name": "xPath Viewer",
+  "version": "0.1",
+  "description": "Search DOM elements on the current page with xPath expressions or right click on an element to see it's absolute xPath expression.",
+  "icons" : {
+    "16" : "icon-16.png",
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "background_page": "background.html",
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["messager.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "xPath Viewer"
+  }
+}

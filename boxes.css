@@ -1,0 +1,85 @@
+#xpathBox {
+	display: block;
+	position: absolute;
+	width: 600px;
+	left: 100px;
+	top: 100px;
+	visibility: visible;
+	border: solid black 1px;
+	min-height: 25px;
+	background-color:rgba(0,200,150,0.8);
+	z-index: 1000000;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: move;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+#xpathInput {
+	width: 380px;
+}
+
+.xpathInput {
+	width: 1000px;
+}
+
+.xpathFoundContainer {
+	margin-top: 7px;
+}
+
+.xpathFoundNumber {
+	cursor: text;
+	font-size: 1.5em;
+	font-weight: 600;
+	/*color: white;
+	text-shadow: 0.05em 0.05em 0.08em black;*/
+	text-align: right;
+	width: 30px;
+	float: left;
+}
+
+#xpathBoxTitle {
+  float: left;
+  width: 80px;
+  margin-right: 6px;
+  text-align: right;
+}
+
+.xpathFoundStyle {
+	cursor: text;,
+	font-size: 1em;
+	border: solid 1px black;
+	background: white;
+	padding: 4px;
+	margin-left: 34px;
+	word-wrap: break-word;
+}
+
+.xpathError {
+	cursor: text;
+	font-size: 14px;
+	color: white;
+	border: solid darkred 1px;
+	background-color:red;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px;
+        padding-left: 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.xpathElementOverlay {
+  position: absolute;
+  background-color:rgba(0,0,0,.3);
+  border: 1px solid red;
+  z-index: 999999;
+}
+
+#useCssDiv {
+  font-size: .7em;
+  margin-left: 3px;
+}
